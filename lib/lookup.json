@@ -402,6 +402,8 @@
   "spawn-wrap": {
     "prefix": "v",
     "flaky": ["win32", "sles", "aix", "darwin"],
+    "repo": "https://github.com/jBarz/spawn-wrap",
+    "sha": "zos",
     "maintainers": "isaacs"
   },
   "node-report": {
