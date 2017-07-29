@@ -415,6 +415,8 @@
     "install": ["--build-from-source"],
     "tags": "native",
     "maintainers": ["forbeslindesay", "timothygu"]
+    "repo": "https://github.com/jBarz/thread-sleep",
+    "sha": "zos"
   },
   "bufferutil": {
     "prefix": "v",
