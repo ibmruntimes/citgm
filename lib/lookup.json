@@ -317,6 +317,8 @@
     "prefix": "v",
     "skip": "win32",
     "tags": "native",
+    "repo": "https://github.com/anisha-rohra/node.bcrypt.js",
+    "sha": "zos",
     "maintainers": "ncb000gt"
   },
   "ref": {
