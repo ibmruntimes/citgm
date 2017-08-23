@@ -276,7 +276,9 @@
   },
   "semver": {
     "prefix": "v",
-    "maintainers": "isaacs"
+    "maintainers": "isaacs",
+    "repo": "https://github.com/jBarz/node-semver/",
+    "sha": "zos"
   },
   "mime": {
     "prefix": "v",
