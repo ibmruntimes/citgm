@@ -441,6 +441,8 @@
   "node-gyp": {
     "prefix": "v",
     "tags": "native",
+    "repo": "https://github.com/jBarz/node-gyp/",
+    "sha": "zos",
     "maintainers": ["nodejs/node-gyp"]
   },
   "sodium-native": {
