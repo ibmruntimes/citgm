@@ -204,6 +204,8 @@
   "sax": {
     "prefix": "v",
     "expectFail": "fips",
+    "repo": "https://github.com/jBarz/sax-js/",
+    "sha": "v1.2.4.zos",
     "maintainers": "isaacs"
   },
   "duplexify": {
