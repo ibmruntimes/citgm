@@ -139,6 +139,8 @@
   "ws": {
     "flaky": "linux",
     "skip": "win32",
+    "repo": "https://github.com/jBarz/ws",
+    "sha": "3.1.0.zos",
     "expectFail": "fips",
     "maintainers": ["einaros", "3rd-Eden", "lpinca"]
   },
