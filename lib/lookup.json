@@ -252,6 +252,8 @@
   "yeoman-generator": {
     "prefix": "v",
     "flaky": ["ppc", "win32", "rhel"],
+    "repo": "https://github.com/jBarz/generator",
+    "sha": "zos",
     "expectFail": "fips",
     "maintainers": ["SBoudrias", "sindresorhus"]
   },
