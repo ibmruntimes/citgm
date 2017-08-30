@@ -67,6 +67,8 @@
   },
   "uglify-js": {
     "prefix": "v",
+    "repo": "https://github.com/jBarz/UglifyJS2",
+    "sha": "v3.0.28.zos",
     "flaky": ["ppc", "win32", "v7", "darwin"],
     "maintainers": "mishoo"
   },
