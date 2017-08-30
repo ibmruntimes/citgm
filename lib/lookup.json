@@ -334,6 +334,8 @@
   "ref": {
     "flaky": "aix",
     "tags": "native",
+    "repo": "https://github.com/jBarz/ref",
+    "sha": "1.3.5.zos",
     "maintainers": "TooTallNate"
   },
   "time": {
