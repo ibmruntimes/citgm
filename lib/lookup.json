@@ -371,7 +371,9 @@
     "prefix": "v",
     "flaky": true,
     "skip": "aix",
-    "maintainers": "mikeal"
+    "maintainers": "mikeal",
+    "repo": "https://github.com/ibmruntimes/request",
+    "sha": "zos"
   },
   "rewire": {
     "prefix": "v",
