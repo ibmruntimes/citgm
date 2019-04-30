@@ -38,7 +38,9 @@
     "prefix": "v",
     "tags": "native",
     "maintainers": "ncb000gt",
-    "skip": "12"
+    "skip": "12",
+    "repo": "https://github.com/ibmruntimes/node.bcrypt.js",
+    "sha": "zos"
   },
   "binary-split": {
     "prefix": "v",
