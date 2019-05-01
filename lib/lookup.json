@@ -198,7 +198,8 @@
   },
   "full-icu-test": {
     "prefix": "v",
-    "maintainers": "srl295"
+    "maintainers": "srl295",
+    "skip": ["os390"]
   },
   "glob": {
     "prefix": "v",
