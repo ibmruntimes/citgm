@@ -268,6 +268,12 @@
     "expectFail": "fips",
     "maintainers": "jdalton"
   },
+  "loopback": {
+    "repo": "https://github.com/ibmruntimes/loopback", 
+    "master": true,
+    "prefix": "v",
+    "envVar": { "JENKINS_HOME": true }
+  },
   "microtime": {
     "prefix": "v",
     "tags": "native",
@@ -548,5 +554,8 @@
     "tags": "native",
     "maintainers": ["lgeiger", "rgbkrk"],
     "skip": ["s390", "ppc", "win32"]
+  },
+  "zos-node-accessor": {
+    "prefix": "v"
   }
 }
