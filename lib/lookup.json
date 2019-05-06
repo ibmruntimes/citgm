@@ -531,6 +531,11 @@
     "master": true,
     "maintainers": ["contra", "phated"]
   },
+  "vsam.js": {
+    "repo": "https://github.com/alexcfyung/vsam.js",
+    "master": true,
+    "prefix": "v"
+  },
   "watchify": {
     "prefix": "v",
     "flaky": ["ppc", "s390", "ubuntu", "rhel"],
