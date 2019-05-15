@@ -385,8 +385,8 @@
     "flaky": true,
     "skip": "aix",
     "maintainers": "mikeal",
-    "repo": "https://github.com/ibmruntimes/request",
-    "sha": "zos"
+    "master": true,
+    "scripts": ["test-ci"]
   },
   "rewire": {
     "prefix": "v",
