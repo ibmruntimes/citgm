@@ -269,7 +269,8 @@
     "maintainers": "jdalton"
   },
   "loopback": {
-    "repo": "https://github.com/ibmruntimes/loopback", 
+    "repo": "git+ssh://git@github.ibm.com:open-z/loopback.git",
+    "useGitClone": true,
     "master": true,
     "prefix": "v",
     "envVar": { "JENKINS_HOME": true }
@@ -521,7 +522,6 @@
     "maintainers": ["contra", "phated"]
   },
   "vsam.js": {
-    "repo": "https://github.com/alexcfyung/vsam.js",
     "master": true,
     "prefix": "v"
   },
