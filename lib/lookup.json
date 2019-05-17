@@ -278,7 +278,10 @@
   "microtime": {
     "prefix": "v",
     "tags": "native",
-    "maintainers": "wadey"
+    "maintainers": "wadey",
+    "repo": "git+ssh://git@github.ibm.com:open-z/node-microtime.git",
+    "useGitClone": true,
+    "sha": "zos"
   },
   "mime": {
     "prefix": "v",
