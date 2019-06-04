@@ -360,6 +360,11 @@
     "maintainers": "kriskowal",
     "skip": "win32"
   },
+  "racf": {
+    "prefix": "v",
+    "tags": "native",
+    "maintainers": "igortodorovski"
+  },
   "radium": {
     "prefix": "v",
     "expectFail": "fips",
