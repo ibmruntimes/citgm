@@ -477,7 +477,10 @@
     "tags": "native",
     "flaky": "ppc",
     "maintainers": "koistya",
-    "skip": ["12", "win32"]
+    "skip": ["12", "win32"],
+    "repo": "git+ssh://git@github.ibm.com:open-z/node-sqlite3.git",
+    "useGitClone": true,
+    "sha": "zos"
   },
   "stylus": {
     "flaky": ["win32", "aix"],
