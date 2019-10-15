@@ -328,6 +328,12 @@
     "scripts": ["rebuild-tests", "test"],
     "tags": "native"
   },
+  "nodejs-bpxwdyn": {
+    "prefix": "v",
+    "tags": "native",
+    "maintainers": "ccw",
+    "skip": ["ppc", "win32"]
+  },
   "node-gyp": {
     "prefix": "v",
     "tags": "native",
@@ -589,6 +595,12 @@
   },
   "zos-node-accessor": {
     "prefix": "v"
+  },
+  "zrexx": {
+    "prefix": "v",
+    "tags": "native",
+    "maintainers": "ccw",
+    "skip": ["ppc", "win32"]
   }
 }
 
