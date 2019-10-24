@@ -565,7 +565,10 @@
     "prefix": "v",
     "flaky": "ppc",
     "expectFail": "fips",
-    "maintainers": ["bcoe", "addaleax"]
+    "maintainers": ["bcoe", "addaleax"],
+    "repo": "git+ssh://git@github.ibm.com:open-z/yargs.git",
+    "useGitClone": true,
+    "sha": "zos"
   },
   "yeoman-generator": {
     "prefix": "v",
