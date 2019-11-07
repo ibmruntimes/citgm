@@ -329,7 +329,7 @@
     "maintainers": ["nodejs/node-gyp"],
     "skip": "win32",
     "repo": "https://github.com/ibmruntimes/node-gyp",
-    "sha": "v3.x.zos.min"
+    "sha": "v6.x.zos"
   },
   "node-report": {
     "prefix": "v",
