@@ -238,7 +238,8 @@
     "skip": "win32",
     "flaky": ["linux", "aix", "darwin"],
     "maintainers": "jeresig",
-    "ignoreGitHead": true
+    "ignoreGitHead": true,
+    "scripts": ["jenkins"]
   },
   "koa": {
     "flaky": "ubuntu",
