@@ -334,9 +334,7 @@
   "node-report": {
     "prefix": "v",
     "tags": "native",
-    "maintainers": ["rnchamberlain", "richardlau"],
-    "repo": "https://github.com/ibmruntimes/node-report",
-    "sha": "zos"
+    "maintainers": ["rnchamberlain", "richardlau"]
   },
   "node-sass": {
     "prefix": "v",
