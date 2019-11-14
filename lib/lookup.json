@@ -23,6 +23,10 @@
     "maintainers": "marijnh",
     "skip": ["win32"]
   },
+  "appmetrics": {
+    "useGitClone": true,
+    "master": true
+  },
   "async": {
     "prefix": "v",
     "flaky": true,
