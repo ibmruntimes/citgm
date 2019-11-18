@@ -238,6 +238,11 @@
     "prefix": "v",
     "maintainers": "juliangruber"
   },
+  "jdbc": {
+    "prefix": "v",
+    "repo": "https://github.com/ibmruntimes/node-jdbc",
+    "sha": "zos"
+  },
   "jquery": {
     "skip": "win32",
     "flaky": ["linux", "aix", "darwin"],
