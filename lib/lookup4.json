@@ -322,6 +322,12 @@
     "skip": "win32",
     "maintainers": "linusu"
   },
+  "mvsutils": {
+    "prefix": "v",
+    "tags": "native",
+    "maintainers": "ccw",
+    "skip": ["ppc", "win32"]
+  },
   "nan": {
     "maintainers": ["nodejs/addon-api"],
     "prefix": "v",
