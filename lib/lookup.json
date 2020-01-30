@@ -24,7 +24,7 @@
   },
   "acorn": {
     "maintainers": "marijnh",
-    "skip": ["win32"]
+    "skip": ["win32", "ppc"]
   },
   "appmetrics": {
     "useGitClone": true,
@@ -37,7 +37,7 @@
   },
   "ava": {
     "prefix": "v",
-    "skip": ["ppc", "win32", "x86", "rhel", "aix", "ia32", "10"],
+    "skip": [true, "ppc", "win32", "x86", "rhel", "aix", "ia32", "10"],
     "maintainers": ["sindresorhus", "novemberborn"]
   },
   "bcrypt": {
@@ -93,13 +93,16 @@
   },
   "clinic": {
     "maintainers": "mcollina",
+    "flaky": ["rhel"],
     "prefix": "v"
   },
   "coffeescript": {
-    "maintainers": ["jashkenas", "GeoffreyBooth"]
+    "maintainers": ["jashkenas", "GeoffreyBooth"],
+    "skip": "rhel"
   },
   "commander": {
     "prefix": "v",
+    "flaky": true,
     "skip": "win32",
     "maintainers": "tj"
   },
@@ -317,7 +320,7 @@
   },
   "moment": {
     "maintainers": "ichernev",
-    "skip": ["ppc", "s390"]
+    "skip": [true, "ppc", "s390"]
   },
   "multer": {
     "prefix": "v",
@@ -343,12 +346,11 @@
     "skip": ["ppc", "win32"]
   },
   "node-gyp": {
+    "envVar": {"FAST_TEST": "true"},
     "prefix": "v",
     "tags": "native",
     "maintainers": ["nodejs/node-gyp"],
-    "skip": "win32",
-    "repo": "https://github.com/ibmruntimes/node-gyp",
-    "sha": "v6.x.zos"
+    "skip": ["win32"]
   },
   "node-report": {
     "prefix": "v",
@@ -420,6 +422,10 @@
     "master": true,
     "scripts": ["test-ci"]
   },
+  "resolve": {
+    "prefix": "v",
+    "maintainers": "ljharb"
+  },
   "rewire": {
     "prefix": "v",
     "maintainers": "jhnns"
@@ -450,7 +456,7 @@
   },
   "serialport": {
     "prefix": "serialport@",
-    "flaky": "ppc",
+    "flaky": ["ppc", "rhel"],
     "tags": "native",
     "maintainers": "reconbot",
     "skip": ["win32"]
@@ -597,7 +603,7 @@
     "prefix": "v",
     "tags": "native",
     "maintainers": ["lgeiger", "rgbkrk"],
-    "skip": ["s390", "ppc", "win32"]
+    "skip": [true, "s390", "ppc", "win32"]
   },
   "zos-node-accessor": {
     "prefix": "v"
