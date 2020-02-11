@@ -593,6 +593,12 @@
     "expectFail": "fips",
     "maintainers": ["SBoudrias", "sindresorhus"]
   },
+  "zcrypto": {
+    "prefix": "v",
+    "tags": "native",
+    "maintainers": "itodorov",
+    "skip": ["ppc", "win32"]
+  },
   "zeromq": {
     "prefix": "v",
     "tags": "native",
