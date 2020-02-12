@@ -1,182 +1,56 @@
 {
-  "lodash": {
-    "expectFail": "fips",
-    "maintainers": "jdalton"
+  "@nearform/bubbleprof": {
+    "maintainers": "mcollina",
+    "prefix": "v",
+    "flaky": true
   },
-  "underscore": {
-    "flaky": ["aix", "s390"],
+  "@nearform/doctor": {
+    "maintainers": "mcollina",
+    "prefix": "v",
+    "flaky": true
+  },
+  "@nearform/flame": {
+    "maintainers": "mcollina",
+    "prefix": "v",
+    "flaky": true
+  },
+  "@zosconnect/zosconnect-node": {
+    "maintainers": "crshnburn"
+  },
+  "JSONStream": {
+    "prefix": "v",
     "skip": "win32",
-    "maintainers": "jashkenas"
+    "maintainers": "dominictarr"
   },
-  "request": {
+  "acorn": {
+    "maintainers": "marijnh",
+    "skip": ["win32", "ppc"]
+  },
+  "appmetrics": {
+    "useGitClone": true,
+    "master": true
+  },
+  "async": {
     "prefix": "v",
     "flaky": true,
-    "skip": "aix",
-    "maintainers": "mikeal"
+    "maintainers": ["aearly", "megawac"]
   },
-  "commander": {
+  "ava": {
     "prefix": "v",
-    "skip": "win32",
-    "maintainers": "tj"
+    "skip": [true, "ppc", "win32", "x86", "rhel", "aix", "ia32", "10"],
+    "maintainers": ["sindresorhus", "novemberborn"]
   },
-  "express": {
-    "flaky": "ppc",
-    "maintainers": "tj"
-  },
-  "q": {
+  "bcrypt": {
     "prefix": "v",
-    "maintainers": "kriskowal"
+    "tags": "native",
+    "maintainers": "ncb000gt",
+    "repo": "https://github.com/ibmruntimes/node.bcrypt.js",
+    "sha": "zos"
   },
-  "coffee-script": {
-    "maintainers": "jashkenas",
-    "skip": "v4"
-  },
-  "through2": {
-    "prefix": "v",
-    "stripAnsi": true,
-    "maintainers": "rvagg"
-  },
-  "glob": {
-    "prefix": "v",
-    "flaky": ["v6", "v7", "win32"],
-    "expectFail": "fips",
-    "maintainers": "isaacs"
-  },
-  "gulp-util": {
-    "prefix": "v",
-    "flaky": "rhel",
-    "maintainers": "contra"
-  },
-  "pug": {
-    "flaky": "ppc",
-    "skip": true,
-    "maintainers": ["tj", "ForbesLindesay"]
-  },
-  "socket.io": {
-    "flaky": true,
-    "maintainers": "rauchg"
-  },
-  "fs-extra": {
-    "flaky": ["linux-ia32", "aix", "s390", "win32"],
-    "expectFail": "fips",
-    "maintainers": "jprichardson"
-  },
-  "body-parser": {
-    "flaky": "aix",
-    "maintainers": "dougwilson"
-  },
-  "uglify-js": {
-    "prefix": "v",
-    "repo": "https://github.com/jBarz/UglifyJS2",
-    "sha": "v3.0.28.zos",
-    "flaky": ["ppc", "win32", "v7", "darwin"],
-    "maintainers": "mishoo"
-  },
-  "jquery": {
-    "skip": "win32",
-    "flaky": ["linux", "aix"],
-    "maintainers": "jeresig"
-  },
-  "rimraf": {
+  "binary-split": {
     "prefix": "v",
     "flaky": "win32",
-    "maintainers": "isaacs"
-  },
-  "david": {
-    "prefix": "v",
-    "maintainers": "alanshaw"
-  },
-  "eslint": {
-    "prefix": "v",
-    "flaky": ["v7", "s390", "ubuntu"],
-    "skip": ["v8", "ppc"],
-    "expectFail": "fips",
-    "maintainers": ["nzakas", "mysticatea", "not-an-aardvark"]
-  },
-  "tape": {
-    "prefix": "v",
-    "flaky": ["linux", "win32"],
-    "maintainers": "substack"
-  },
-  "browserify": {
-    "flaky": ["v7", "win32"],
-    "expectFail": "fips",
-    "maintainers": "substack"
-  },
-  "watchify": {
-    "prefix": "v",
-    "flaky": ["ppc", "v7", "s390", "ubuntu", "rhel"],
-    "maintainers": "substack"
-  },
-  "stylus": {
-    "flaky": ["win32", "aix"],
-    "maintainers": "tj"
-  },
-  "level": {
-    "prefix": "v",
-    "flaky": ["aix", "s390"],
-    "maintainers": ["ralphtheninja", "rvagg"]
-  },
-  "torrent-stream": {
-    "prefix": "v",
-    "flaky": true,
-    "maintainers": "mafintosh"
-  },
-  "react": {
-    "prefix": "v",
-    "flaky": ["v6", "v7"],
-    "skip": true,
-    "maintainers": ["zpao", "spicyj", "sebmarkbage"]
-  },
-  "gulp": {
-    "prefix": "v",
-    "flaky": ["ppc", "rhel"],
-    "skip": "win32",
-    "maintainers": "contra"
-  },
-  "moment": {
-    "flaky": true,
-    "maintainers": "ichernev"
-  },
-  "ws": {
-    "flaky": "linux",
-    "skip": "win32",
-    "repo": "https://github.com/jBarz/ws",
-    "sha": "3.1.0.zos",
-    "expectFail": "fips",
-    "maintainers": ["einaros", "3rd-Eden", "lpinca"]
-  },
-  "vinyl": {
-    "prefix": "v",
-    "maintainers": ["contra", "phated"]
-  },
-  "vinyl-fs": {
-    "prefix": "v",
-    "flaky": true,
-    "master": true,
-    "maintainers": ["contra", "phated"]
-  },
-  "readable-stream": {
-    "prefix": "v",
-    "flaky": ["ppc", "darwin"],
-    "maintainers": "nodejs/streams"
-  },
-  "ftp": {
-    "prefix": "v",
-    "maintainers": "mscdex"
-  },
-  "split2": {
-    "prefix": "v",
-    "maintainers": "mcollina"
-  },
-  "throughv": {
-    "prefix": "v",
-    "stripAnsi": true,
-    "maintainers": "mcollina"
-  },
-  "duplexer2": {
-    "prefix": "v",
-    "maintainers": ["shinn", "deoxxa"]
+    "maintainers": ["maxogden", "mourner"]
   },
   "bl": {
     "prefix": "v",
@@ -184,194 +58,177 @@
     "expectFail": "fips",
     "maintainers": "rvagg"
   },
-  "binary-split": {
+  "blake2b-wasm": {
+    "maintainers": ["mafintosh", "addaleax"],
     "prefix": "v",
-    "flaky": "win32",
-    "maintainers": ["maxogden", "mourner"]
+    "skip": ["win32"]
   },
-  "spdy": {
+  "bluebird": {
     "prefix": "v",
-    "flaky": ["aix", "sles"],
-    "skip": "win32",
-    "maintainers": "diasdavid"
+    "maintainers": "petkaantonov"
   },
-  "dicer": {
-    "prefix": "v",
-    "maintainers": "mscdex"
-  },
-  "spdy-transport": {
-    "prefix": "v",
-    "skip": "win32",
+  "body-parser": {
     "flaky": "aix",
-    "maintainers": "diasdavid"
+    "maintainers": "dougwilson"
   },
-  "sax": {
-    "prefix": "v",
+  "browserify": {
     "expectFail": "fips",
-    "repo": "https://github.com/jBarz/sax-js/",
-    "sha": "v1.2.4.zos",
-    "maintainers": "isaacs"
+    "maintainers": "substack"
   },
-  "duplexify": {
-    "prefix": "v",
-    "maintainers": "mafintosh"
+  "bson": {
+    "prefix": "V",
+    "maintainers": "christkv",
+    "scripts": ["test-node"],
+    "skip": "win32"
   },
-  "pumpify": {
+  "bufferutil": {
     "prefix": "v",
-    "maintainers": "mafintosh"
+    "tags": "native",
+    "maintainers": ["3rdeden", "einaros", "lpinca"],
+    "skip": "win32"
   },
-  "from2": {
-    "prefix": "v",
-    "maintainers": ["mafintosh", "hughsk"]
-  },
-  "flush-write-stream": {
-    "prefix": "v",
-    "maintainers": "mafintosh"
-  },
-  "jsonstream": {
-    "prefix": "v",
+  "cheerio": {
     "skip": "win32",
-    "maintainers": "dominictarr"
+    "maintainers": ["matthewmueller", "jugglinmike"]
+  },
+  "clinic": {
+    "maintainers": "mcollina",
+    "flaky": ["rhel"],
+    "prefix": "v"
+  },
+  "coffeescript": {
+    "maintainers": ["jashkenas", "GeoffreyBooth"],
+    "skip": "rhel"
+  },
+  "commander": {
+    "prefix": "v",
+    "flaky": true,
+    "skip": "win32",
+    "maintainers": "tj"
+  },
+  "crc32-stream": {
+    "maintainers": "ctalkington",
+    "skip": "win32"
   },
   "csv-parser": {
     "prefix": "v",
     "flaky": "win32",
     "maintainers": "mafintosh"
   },
-  "async": {
+  "david": {
     "prefix": "v",
-    "flaky": true,
-    "maintainers": ["aearly", "megawac"]
+    "maintainers": "alanshaw",
+    "skip": true
   },
-  "bluebird": {
+  "debug": {
+    "maintainers": ["qix", "tootallnate"],
+    "skip": ["aix", "ppc", "s390", "win32"]
+  },
+  "dicer": {
     "prefix": "v",
-    "maintainers": "petkaantonov"
+    "maintainers": "mscdex"
   },
-  "mkdirp": {
-    "master": true,
-    "flaky": ["v6", "v7"],
-    "skip": ["v8"],
-    "maintainers": "substack"
-  },
-  "yeoman-generator": {
+  "duplexer2": {
     "prefix": "v",
-    "flaky": ["ppc", "win32", "rhel"],
-    "repo": "https://github.com/jBarz/generator",
-    "sha": "zos",
-    "expectFail": "fips",
-    "maintainers": ["SBoudrias", "sindresorhus"]
+    "maintainers": ["shinn", "deoxxa"]
   },
-  "minimist": {
-    "maintainers": "substack"
-  },
-  "cheerio": {
-    "skip": "win32",
-    "maintainers": ["matthewmueller", "jugglinmike"]
-  },
-  "uuid": {
+  "duplexify": {
     "prefix": "v",
-    "maintainers": ["ctavan", "broofa"]
-  },
-  "winston": {
-    "flaky": ["win32", "ppc", "s390"],
-    "maintainers": "indexzero"
-  },
-  "yargs": {
-    "prefix": "v",
-    "flaky": "ppc",
-    "repo": "https://github.com/jBarz/yargs/",
-    "sha": "v8.0.2.zos",
-    "expectFail": "fips",
-    "maintainers": ["bcoe", "addaleax"]
-  },
-  "semver": {
-    "prefix": "v",
-    "maintainers": "isaacs",
-    "repo": "https://github.com/jBarz/node-semver/",
-    "sha": "zos"
-  },
-  "mime": {
-    "prefix": "v",
-    "flaky": true,
-    "maintainers": "broofa"
-  },
-  "serialport": {
-    "flaky": ["ppc", "win32"],
-    "expectFail": "fips",
-    "tags": "native",
-    "maintainers": "broofa"
-  },
-  "isarray": {
-    "prefix": "v",
-    "maintainers": "juliangruber"
-  },
-  "inherits": {
-    "prefix": "v",
-    "maintainers": "isaacs"
-  },
-  "graceful-fs": {
-    "prefix": "v",
-    "maintainers": "isaacs"
-  },
-  "leveldown": {
-    "prefix": "v",
-    "flaky": ["ppc", "s390"],
-    "tags": "native",
-    "maintainers": "rvagg"
-  },
-  "zeromq": {
-    "prefix": "v",
-    "tags": "native",
-    "maintainers": ["lgeiger", "rgbkrk"],
-    "skip": ["s390", "ppc"]
-  },
-  "bcrypt": {
-    "prefix": "v",
-    "skip": "win32",
-    "tags": "native",
-    "repo": "https://github.com/anisha-rohra/node.bcrypt.js",
-    "sha": "zos",
-    "maintainers": "ncb000gt"
-  },
-  "ref": {
-    "flaky": "aix",
-    "tags": "native",
-    "repo": "https://github.com/jBarz/ref",
-    "sha": "1.3.5.zos",
-    "maintainers": "TooTallNate"
-  },
-  "time": {
-    "flaky": ["linux-ia32", "s390"],
-    "skip": ["win32", "aix"],
-    "tags": "native",
-    "maintainers": "TooTallNate"
-  },
-  "bson": {
-    "prefix": "V",
-    "maintainers": "christkv"
+    "maintainers": "mafintosh"
   },
   "ember-cli": {
     "prefix": "v",
     "flaky": ["win32", "rhel", "sles"],
+    "master": true,
     "expectFail": "fips",
-    "skip": true,
     "maintainers": ["stefanpenner", "rwjblue", "Turbo87", "kellyselden"]
   },
-  "node-sass": {
+  "eslint": {
     "prefix": "v",
-    "flaky": true,
+    "flaky": ["s390", "ubuntu"],
+    "skip": true,
+    "expectFail": "fips",
+    "maintainers": ["nzakas", "mysticatea", "not-an-aardvark"],
+    "comment": "Skipped because libX11 is required for headless Chrome"
+  },
+  "eslint-plugin-jest": {
+    "prefix": "v",
+    "maintainers": "SimenB",
+    "yarn": true,
+    "skip": ["aix"]
+  },
+  "esprima": {
+    "maintainers": "ariya",
+    "expectFail": "fips",
+    "skip": "win32"
+  },
+  "express": {
+    "flaky": "ppc",
+    "maintainers": "dougwilson",
+    "skip": "win32"
+  },
+  "express-session": {
+    "prefix": "v",
+    "maintainers": "dougwilson",
+    "skip": "win32"
+  },
+  "fastify": {
+    "maintainers": ["mcollina", "delvedor"],
+    "prefix": "v"
+  },
+  "ffi": {
+    "flaky": ["ppc", "aix", "s390", "ubuntu"],
+    "skip": true,
     "tags": "native",
-    "maintainers": "xzyfer"
+    "maintainers": "TooTallNate"
+  },
+  "flush-write-stream": {
+    "prefix": "v",
+    "maintainers": "mafintosh",
+    "skip": "win32"
+  },
+  "from2": {
+    "prefix": "v",
+    "maintainers": ["mafintosh", "hughsk"]
+  },
+  "fs-extra": {
+    "flaky": ["linux-ia32", "aix", "s390", "win32"],
+    "skip": ">=12",
+    "expectFail": "fips",
+    "maintainers": "jprichardson"
   },
   "full-icu-test": {
     "prefix": "v",
-    "maintainers": "srl295"
+    "maintainers": "srl295",
+    "skip": ["os390"]
   },
-  "sqlite3": {
+  "glob": {
     "prefix": "v",
-    "tags": "native",
-    "flaky": "ppc",
-    "maintainers": "koistya"
+    "flaky": ["win32"],
+    "expectFail": "fips",
+    "maintainers": "isaacs"
+  },
+  "got": {
+    "maintainers": ["sindresorhus"],
+    "prefix": "v",
+    "skip": ["<=8", ">=11"]
+  },
+  "graceful-fs": {
+    "prefix": "v",
+    "maintainers": "isaacs",
+    "skip": ">=11"
+  },
+  "gulp": {
+    "prefix": "v",
+    "flaky": ["ppc", "rhel"],
+    "skip": "win32",
+    "maintainers": "contra"
+  },
+  "gulp-util": {
+    "prefix": "v",
+    "flaky": "rhel",
+    "maintainers": "contra",
+    "skip": "win32"
   },
   "iconv": {
     "prefix": "v",
@@ -379,88 +236,388 @@
     "tags": "native",
     "maintainers": "bnoordhuis"
   },
-  "electron-prebuilt": {
+  "inherits": {
     "prefix": "v",
-    "flaky": "s390",
-    "skip": "ppc",
-    "maintainers": "maxogden"
+    "maintainers": "isaacs"
+  },
+  "isarray": {
+    "prefix": "v",
+    "maintainers": "juliangruber"
+  },
+  "jdbc": {
+    "prefix": "v",
+    "repo": "https://github.com/ibmruntimes/node-jdbc",
+    "sha": "zos"
+  },
+  "jquery": {
+    "skip": "win32",
+    "flaky": ["linux", "aix", "darwin"],
+    "maintainers": "jeresig",
+    "ignoreGitHead": true,
+    "scripts": ["jenkins"]
+  },
+  "koa": {
+    "flaky": "ubuntu",
+    "maintainers": "tj"
+  },
+  "level": {
+    "prefix": "v",
+    "flaky": ["aix", "s390"],
+    "maintainers": ["ralphtheninja", "vweevers"],
+    "skip": "win32"
+  },
+  "leveldown": {
+    "prefix": "v",
+    "useGitClone": true,
+    "flaky": ["ppc", "s390"],
+    "tags": "native",
+    "maintainers": ["ralphtheninja", "vweevers"]
   },
   "libxmljs": {
     "prefix": "v",
     "flaky": ["aix", "sles", "rhel", "darwin"],
-    "skip": "win32",
+    "skip": ">=12",
     "tags": "native",
     "maintainers": "defunctzombie"
   },
-  "radium": {
-    "prefix": "v",
-    "flaky": ["fedora", "ubuntu"],
-    "skip": ["ppc", "s390"],
+  "lodash": {
     "expectFail": "fips",
-    "maintainers": ["ianobermiller", "alexlande"]
+    "maintainers": "jdalton"
   },
-  "ffi": {
-    "flaky": ["ppc", "aix", "s390", "ubuntu"],
-    "skip": "win32",
-    "tags": "native",
-    "maintainers": "TooTallNate"
+  "loopback": {
+    "repo": "git+ssh://git@github.ibm.com:open-z/loopback.git",
+    "useGitClone": true,
+    "master": true,
+    "prefix": "v",
+    "envVar": { "JENKINS_HOME": true }
   },
   "microtime": {
     "prefix": "v",
     "tags": "native",
-    "maintainers": "wadey"
+    "maintainers": "wadey",
+    "repo": "git+ssh://git@github.ibm.com:open-z/node-microtime.git",
+    "useGitClone": true,
+    "sha": "zos"
   },
-  "koa": {
-    "skip": ["<7", "win32", "rhel"],
-    "flaky": "ubuntu",
-    "maintainers": "tj"
-  },
-  "spawn-wrap": {
+  "mime": {
     "prefix": "v",
-    "flaky": ["win32", "sles", "aix", "darwin"],
-    "repo": "https://github.com/jBarz/spawn-wrap",
-    "sha": "zos",
-    "maintainers": "isaacs"
+    "maintainers": "broofa"
+  },
+  "minimist": {
+    "maintainers": "substack"
+  },
+  "mkdirp": {
+    "master": true,
+    "skip": true,
+    "maintainers": "substack"
+  },
+  "mocha": {
+    "prefix": "v",
+    "skip": true,
+    "expectFail": "fips",
+    "maintainers": ["tj", "boneskull"],
+    "comment": "Skipped because requires to install Google Chrome for browser tests"
+  },
+  "moment": {
+    "maintainers": "ichernev",
+    "skip": [true, "ppc", "s390"]
+  },
+  "multer": {
+    "prefix": "v",
+    "skip": "win32",
+    "maintainers": "linusu"
+  },
+  "mvsutils": {
+    "prefix": "v",
+    "tags": "native",
+    "maintainers": "ccw",
+    "skip": ["ppc", "win32"]
+  },
+  "nan": {
+    "maintainers": ["nodejs/addon-api"],
+    "prefix": "v",
+    "scripts": ["rebuild-tests", "test"],
+    "tags": "native"
+  },
+  "nodejs-bpxwdyn": {
+    "prefix": "v",
+    "tags": "native",
+    "maintainers": "ccw",
+    "skip": ["ppc", "win32"]
+  },
+  "node-gyp": {
+    "envVar": {"FAST_TEST": "true"},
+    "prefix": "v",
+    "tags": "native",
+    "maintainers": ["nodejs/node-gyp"],
+    "skip": ["win32"]
   },
   "node-report": {
     "prefix": "v",
     "tags": "native",
     "maintainers": ["rnchamberlain", "richardlau"]
   },
+  "node-sass": {
+    "prefix": "v",
+    "flaky": true,
+    "tags": "native",
+    "maintainers": "xzyfer",
+    "comment": "Flaky because of test timeouts"
+  },
+  "path-to-regexp": {
+    "prefix": "v",
+    "maintainers": "blakeembrey"
+  },
+  "pug": {
+    "prefix": "pug@",
+    "yarn": true,
+    "maintainers": ["tj", "ForbesLindesay"],
+    "skip": ["win32"],
+    "repo": "https://github.com/pugjs/pug"
+  },
+  "pumpify": {
+    "prefix": "v",
+    "maintainers": "mafintosh",
+    "skip": "win32"
+  },
+  "q": {
+    "prefix": "v",
+    "maintainers": "kriskowal",
+    "skip": "win32"
+  },
+  "racf": {
+    "prefix": "v",
+    "tags": "native",
+    "maintainers": "igortodorovski"
+  },
+  "radium": {
+    "prefix": "v",
+    "expectFail": "fips",
+    "maintainers": ["ianobermiller", "alexlande"],
+    "scripts": ["test-node"]
+  },
+  "react": {
+    "prefix": "v",
+    "maintainers": ["acdlite", "gaearon", "sophiebits"],
+    "yarn": true,
+    "skip": [">=12", "aix", "s390", "ppc"]
+  },
+  "readable-stream": {
+    "prefix": "v",
+    "flaky": ["ppc", "darwin"],
+    "maintainers": "nodejs/streams",
+    "skip": [">=12", "win32"]
+  },
+  "ref": {
+    "flaky": "aix",
+    "tags": "native",
+    "maintainers": "TooTallNate",
+    "skip": [true, "12", "win32"]
+  },
+  "request": {
+    "prefix": "v",
+    "flaky": true,
+    "skip": "aix",
+    "maintainers": "mikeal",
+    "master": true,
+    "scripts": ["test-ci"]
+  },
+  "resolve": {
+    "prefix": "v",
+    "maintainers": "ljharb"
+  },
+  "rewire": {
+    "prefix": "v",
+    "maintainers": "jhnns"
+  },
+  "rimraf": {
+    "prefix": "v",
+    "flaky": "win32",
+    "maintainers": "isaacs"
+  },
+  "router": {
+    "prefix": "v",
+    "maintainers": "dougwilson",
+    "skip": "win32"
+  },
+  "sax": {
+    "skip": "win32",
+    "prefix": "v",
+    "expectFail": "fips",
+    "maintainers": "isaacs"
+  },
+  "semver": {
+    "skip": "win32",
+    "prefix": "v",
+    "maintainers": "isaacs",
+    "expectFail": "fips",
+    "repo": "https://github.com/jBarz/node-semver/",
+    "sha": "zos"
+  },
+  "serialport": {
+    "prefix": "serialport@",
+    "flaky": ["ppc", "rhel"],
+    "tags": "native",
+    "maintainers": "reconbot",
+    "skip": ["win32"]
+  },
+  "shot": {
+    "prefix": "v",
+    "maintainers": "mtharrison"
+  },
+  "socket.io": {
+    "maintainers": "rauchg"
+  },
+  "spawn-wrap": {
+    "prefix": "v",
+    "flaky": ["sles", "aix", "darwin"],
+    "maintainers": "isaacs",
+    "skip": "win32"
+  },
+  "spdy": {
+    "prefix": "v",
+    "flaky": ["aix", "sles"],
+    "skip": ">=10",
+    "maintainers": "diasdavid"
+  },
+  "spdy-transport": {
+    "prefix": "v",
+    "skip": ">=10",
+    "flaky": "aix",
+    "maintainers": "diasdavid"
+  },
+  "split2": {
+    "prefix": "v",
+    "maintainers": "mcollina"
+  },
+  "sqlite3": {
+    "prefix": "v",
+    "tags": "native",
+    "flaky": "ppc",
+    "maintainers": "koistya",
+    "skip": ["12", "win32"],
+    "repo": "git+ssh://git@github.ibm.com:open-z/node-sqlite3.git",
+    "useGitClone": true,
+    "sha": "zos"
+  },
+  "stylus": {
+    "flaky": ["win32", "aix"],
+    "maintainers": "tj",
+    "skip": ">=11"
+  },
+  "tape": {
+    "prefix": "v",
+    "maintainers": "substack"
+  },
   "thread-sleep": {
     "install": ["--build-from-source"],
     "tags": "native",
-    "repo": "https://github.com/jBarz/thread-sleep",
-    "sha": "zos",
     "maintainers": ["forbeslindesay", "timothygu"]
   },
-  "bufferutil": {
+  "through2": {
     "prefix": "v",
+    "stripAnsi": true,
+    "maintainers": "rvagg"
+  },
+  "throughv": {
+    "prefix": "v",
+    "stripAnsi": true,
+    "maintainers": "mcollina"
+  },
+  "time": {
+    "flaky": ["linux-ia32", "s390"],
+    "skip": ["win32", "aix", ">=11"],
     "tags": "native",
-    "maintainers": ["3rdeden", "einaros", "lpinca"]
+    "maintainers": "TooTallNate"
+  },
+  "torrent-stream": {
+    "prefix": "v",
+    "maintainers": "mafintosh"
+  },
+  "uglify-js": {
+    "prefix": "v",
+    "flaky": ["ppc", "darwin"],
+    "maintainers": "mishoo",
+    "skip": "12"
+  },
+  "underscore": {
+    "flaky": ["aix", "s390"],
+    "skip": "win32",
+    "maintainers": "jashkenas"
+  },
+  "uuid": {
+    "prefix": "v",
+    "maintainers": ["ctavan", "broofa"],
+    "skip": "win32"
+  },
+  "vinyl": {
+    "prefix": "v",
+    "maintainers": ["contra", "phated"],
+    "skip": "win32"
+  },
+  "vinyl-fs": {
+    "prefix": "v",
+    "flaky": true,
+    "master": true,
+    "maintainers": ["contra", "phated"]
+  },
+  "vsam.js": {
+    "master": true,
+    "prefix": "v"
+  },
+  "watchify": {
+    "prefix": "v",
+    "flaky": ["ppc", "s390", "ubuntu", "rhel"],
+    "maintainers": "substack",
+    "skip": "win32"
   },
   "weak": {
     "tags": "native",
+    "skip": [">=10"],
     "maintainers": "tootallnate"
   },
-  "acorn": {
-    "maintainers": "marijnh"
+  "winston": {
+    "flaky": ["win32", "ppc", "s390"],
+    "maintainers": "indexzero"
   },
-  "esprima": {
-    "maintainers": "ariya",
-    "expectFail": "fips"
+  "ws": {
+    "expectFail": "fips",
+    "maintainers": ["einaros", "3rd-Eden", "lpinca"]
   },
-  "node-gyp": {
-    "prefix": "v",
-    "tags": "native",
-    "repo": "https://github.com/jBarz/node-gyp/",
-    "sha": "zos",
-    "maintainers": ["nodejs/node-gyp"]
-  },
-  "sodium-native": {
-    "maintainers": ["mafintosh", "emilbayes"],
+  "yargs": {
     "prefix": "v",
     "flaky": "ppc",
-    "tags": "native"
+    "expectFail": "fips",
+    "maintainers": ["bcoe", "addaleax"],
+    "repo": "git+ssh://git@github.ibm.com:open-z/yargs.git",
+    "useGitClone": true,
+    "sha": "zos"
+  },
+  "yeoman-generator": {
+    "prefix": "v",
+    "flaky": ["ppc", "rhel"],
+    "expectFail": "fips",
+    "maintainers": ["SBoudrias", "sindresorhus"]
+  },
+  "zcrypto": {
+    "prefix": "v",
+    "tags": "native",
+    "maintainers": "itodorov",
+    "skip": ["ppc", "win32"]
+  },
+  "zeromq": {
+    "prefix": "v",
+    "tags": "native",
+    "maintainers": ["lgeiger", "rgbkrk"],
+    "skip": [true, "s390", "ppc", "win32"]
+  },
+  "zos-node-accessor": {
+    "prefix": "v"
+  },
+  "zrexx": {
+    "prefix": "v",
+    "tags": "native",
+    "maintainers": "ccw",
+    "skip": ["ppc", "win32"]
   }
 }
